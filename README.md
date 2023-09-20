@@ -1,2 +1,1 @@
-# Projeto.Python
-JMC Tecnology - Projeto em Python
+# Personal Mobile - Acompanhamento de desempenho fisíco 
