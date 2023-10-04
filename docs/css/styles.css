@@ -13,13 +13,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00aeef;
+    background-color: #fff;
 }
 
 .container {
     text-align: left; /* Ajuste o alinhamento do texto */
     max-width: 500px; /* Define uma largura máxima para o conteúdo */
-    background-color: #f0f0f0; /* Cor de fundo opcional */
+    background-color: #00aeef; /* Cor de fundo opcional */
     padding: 40px;
     border-radius: 20px;
 }
