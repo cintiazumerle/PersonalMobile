@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     flex-direction: column;
     background-color: #fff;
     padding: 3rem;
@@ -59,6 +60,17 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+=======
+    background-color: #fff;
+}
+
+.container {
+    text-align: left; /* Ajuste o alinhamento do texto */
+    max-width: 500px; /* Define uma largura máxima para o conteúdo */
+    background-color: #00aeef; /* Cor de fundo opcional */
+    padding: 40px;
+    border-radius: 20px;
+>>>>>>> 8532c1e2162ff824ac4ddfc9d74b19bb832d0de5
 }
 
 .input-box input {
