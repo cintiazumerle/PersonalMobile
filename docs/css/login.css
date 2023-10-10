@@ -15,32 +15,32 @@ body {
   background: #00aeef;
 }
 
-.estructure {
+.container {
     width: 23%;
     height: 60vh;
     display: flex;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.212);
 }
 
-.container {
+.form {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #fff;
     padding: 3rem;
 }
 
-.container-header {
-    margin-bottom: 5rem;
+.form-header {
+    margin-bottom: 3rem;
     display: flex;
-    text-align: center;
 }
 
-.container-header h1::after {
+.form-header h1::after {
     content: "";
     display: block;
-    width: 13rem;
+    width: 3.5rem;
     height: 0.4rem;
     background-color: #00aeef;
     margin: 0 auto;
@@ -48,23 +48,63 @@ body {
     border-radius: 10px;
 }
 
-.a-box a {
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+  
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1098039216);
+}
+
+.input-box input:hover {
+    background-color: rgba(238, 238, 238, 0.4588235294);
+}
+  
+.input-box input:focus-visible {
+    outline: 1px solid #00aeef;
+}
+
+.imput-box label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7529411765);
+}
+
+.input-box input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.7450980392);
+}
+
+.input-box input::placeholder {
+  color: rgba(0, 0, 0, 0.7450980392);
+}
+
+.submit input {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-top: 0rem;
     border: none;
     background-color: #00aeef;
-    padding: 0.70rem;
+    padding: 0.40rem;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
-    display: block;
 }
-
-.a-box a:hover {
+  
+.submit input:hover {
     background-color: #153d8a;
 }
