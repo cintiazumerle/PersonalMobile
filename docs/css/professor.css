@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+    margin: auto;
     text-align: center; /* Ajuste o alinhamento do texto */
     max-width: 500px; /* Define uma largura máxima para o conteúdo */
     background-color: #f0f0f0; /* Cor de fundo opcional */
@@ -25,7 +26,6 @@ body {
 }
 
 .image {
-    width: 200px;
     height: 100px;
     position: relative;
     margin: 20px;
@@ -67,4 +67,47 @@ body {
     margin: 5px 0; /* Margem superior e inferior para espaçamento entre os inputs */
     border: 1px solid #ccc; /* Borda */
     border-radius: 4px; /* Cantos arredondados */
+}
+
+.exercicios-container input:focus-visible {
+    outline: 1px solid #00aeef;
+}
+
+
+button.adicionar-exercicio {
+    width: auto;
+    margin-top: 0.5rem;
+    margin-right: 10px;
+    border: none;
+    background-color: #153d8a;
+    padding: 0.20rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+button.adicionar-exercicio:hover {
+    background-color: #091b3d;
+}
+
+button  {
+    width: auto;
+    margin-top: 0.5rem;
+    margin-right: 10px;
+    border: none;
+    background-color: #153d8a;
+    padding: 0.20rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #091b3d;
 }

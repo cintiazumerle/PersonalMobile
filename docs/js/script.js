@@ -23,6 +23,7 @@
         // Crie e insira os botões de navegação
         const voltar = document.createElement("button");
         voltar.innerText = "voltar";
+        voltar.classList.add("botao-voltar"); //Adicione uma classe ao botão
         voltar.addEventListener("click", function () {
           // Redirecione para o destino 1
           window.location.href = "";

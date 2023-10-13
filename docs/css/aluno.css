@@ -17,15 +17,16 @@ body {
 }
 
 .container {
+    margin: auto;
     text-align: center; /* Ajuste o alinhamento do texto */
-    max-width: 500px; /* Define uma largura máxima para o conteúdo */
+    max-width: 450px; /* Define uma largura máxima para o conteúdo */
     background-color: #f0f0f0; /* Cor de fundo opcional */
     padding: 40px;
     border-radius: 20px;
 }
 
 .image {
-    width: 200px;
+    width: auto;
     height: 100px;
     position: relative;
     margin: 20px;
@@ -72,18 +73,48 @@ h1.treinos {
 
 
 /* css javascrit */
-#botoes-de-navegacao {
+.botao-voltar {
+    width: 50%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #00aeef;
+    padding: 0.40rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#botao-relatorio {
     display: block;
     width: 100%;
-    height: auto;
-    border:  2px dashed red;
+    margin-top: 1rem;
+    border: none;
+    background-color: #00aeef;
+    padding: 0.40rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#botoes-de-navegacao button:hover {
+    background-color: #153d8a;
 }
 
 #botoes-de-navegacao h2 {
     color: rgb(0, 0, 0);
+    margin-top: 1.5rem;
 }
 
 #botoes-de-navegacao img {
     width: 55%;
     height: auto;
 }
+
