@@ -69,3 +69,21 @@ h1.treinos {
 .submit input:hover {
     background-color: #153d8a;
 }
+
+
+/* css javascrit */
+#botoes-de-navegacao {
+    display: block;
+    width: 100%;
+    height: auto;
+    border:  2px dashed red;
+}
+
+#botoes-de-navegacao h2 {
+    color: rgb(0, 0, 0);
+}
+
+#botoes-de-navegacao img {
+    width: 55%;
+    height: auto;
+}

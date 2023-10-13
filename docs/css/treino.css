@@ -56,3 +56,9 @@ body {
 .submit input:hover {
   background-color: #153d8a;
 }
+
+/* css java script */
+
+#formulario {
+  border: dashed red;
+}

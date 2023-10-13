@@ -55,3 +55,16 @@ body {
 .card-container a:hover {
     background-color: #153d8a;
 }
+
+/* css java script */
+
+  .exercicios-container input {
+    border: 2px dashed red;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 2px; /* Espaço entre os itens */
+    width: 100%; /* Largura 100% para ocupar a largura do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px 0; /* Margem superior e inferior para espaçamento entre os inputs */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+}
