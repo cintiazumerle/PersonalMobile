@@ -28,28 +28,30 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .container-header {
-    margin-bottom: 5rem;
     display: flex;
     text-align: center;
+
 }
 
-.container-header h1::after {
-    content: "";
-    display: block;
-    width: 13rem;
-    height: 0.4rem;
-    background-color: #00aeef;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
+.image{
+    max-height: 200px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.image img{
+    height: 140%;
+    display: inline;
+    
+
 }
 
 .a-box a {
-    width: 100%;
+    width: 70%;
     margin-bottom: 1rem;
     border: none;
     background-color: #00aeef;
