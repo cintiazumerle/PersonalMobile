@@ -1,10 +1,12 @@
   document.addEventListener("DOMContentLoaded", function () {
     const botaoRelatorio = document.getElementById("botao-relatorio"); // pegar id do html para ser usado
     const botoesDeNavegacao = document.getElementById("botoes-de-navegacao");
-    const meuFormulario = document.getElementById("meu-formulario")
+    const meuFormulario = document.getElementById("meu-formulario");
+    const treinoH1 = document.querySelector(".treinos"); // Seleciona o elemento h1
 
     botaoRelatorio.addEventListener("click", function () { //função para o furmulario sumir
         meuFormulario.style.display = "none";
+        treinoH1.style.display = "none"; // Oculta o elemento h1 "Treino"
     });
 
     botaoRelatorio.addEventListener("click", function () { //fução para quando relatorio for clickado exibirá os butoes
