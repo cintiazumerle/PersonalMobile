@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area do Professor</title>
-    <link rel="stylesheet" href="/docs/CSS/professor.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/docs/css/professor.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Professor</h1>
@@ -15,82 +13,60 @@
         <h2>"NOME PROFESSOR"</h2>
 
         <div class="card-container">
+            <div class="box">
+                <button onclick="ShowA()">Avaliação</button>
+            </div>
 
-            <!-- ... -->
-            <!-- ... -->
-                <a href="#" class="treino-link" data-dia="segunda">Treino de Segunda</a>
-                <div class="formulario" data-dia="segunda" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Aqui você adicionará dinamicamente os campos de entrada para exercícios -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <a href="#" class="treino-link" data-dia="terca">Treino de Terça</a>
-                <div class="formulario" data-dia="terca" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Conteúdo do formulário para terça-feira -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <a href="#" class="treino-link" data-dia="quarta">Treino de Quarta</a>
-                <div class="formulario" data-dia="quarta" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Conteúdo do formulário para terça-feira -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <a href="#" class="treino-link" data-dia="quinta">Treino de Quinta</a>
-                <div class="formulario" data-dia="quinta" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Conteúdo do formulário para terça-feira -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <a href="#" class="treino-link" data-dia="sexta">Treino de Sexta</a>
-                <div class="formulario" data-dia="sexta" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Conteúdo do formulário para terça-feira -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <a href="#" class="treino-link" data-dia="sabado">Treino de Sabado</a>
-                <div class="formulario" data-dia="sabado" style="display: none;">
-                    <form class="treino-form">
-                        <div class="exercicios-container">
-                            <!-- Conteúdo do formulário para terça-feira -->
-                        </div>
-                        <button class="adicionar-exercicio" type="button">Adicionar Exercício</button>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <!-- Repita para os outros dias da semana -->
-                <!-- ... -->
-
-
-
+            <div class="box">
+                <button onclick="ShowB()">Treino do Dia</button>
+            </div>
         </div>
+
+        <div class="a-container" id="a-container">
+            <form>
+                <table>
+                    <tr>
+                        <td>Expectativa de Tempo - 200M Corrida:</td>
+                        <td><input title="expectativa_tempo" type="text" name="expectativa_tempo" id="expectativa_tempo" required></td>
+                    </tr>
+                    <tr>
+                        <td>Expectativa de Peso e Quantidade - 20 Black Squat:</td>
+                        <td><input title="expectativa_peso_segundo" type="text" name="expectativa_peso_segundo" id="expectativa_peso_segundo" required></td>
+                        <td><input title="expectativa_repeticao_segundo" type="text" name="expectativa_repeticao_segundo" id="expectativa_repeticao_segundo" required></td>
+                    </tr>
+                    <tr>
+                        <td>Expectativa de Peso e Quantidade - 15 Butterfly sit up:</td>
+                        <td><input title="expectativa_peso_primeiro" type="text" name="expectativa_peso_primeiro" id="expectativa_peso_primeiro" required></td>
+                        <td><input title="expectativa_repeticao_primeiro" type="text" name="expectativa_repeticao_primeiro" id="expectativa_repeticao_primeiro" required></td>
+                    </tr>
+                    <tr>
+                        <td>Expectativa de Peso e Quantidade - 10 Push Press:</td>
+                        <td><input title="expectativa_peso_terceiro" type="text" name="expectativa_peso_terceiro" id="expectativa_peso_terceiro" required></td>
+                        <td><input title="expectativa_repeticao_terceiro" type="text" name="expectativa_repeticao_terceiro" id="expectativa_repeticao_terceiro" required></td>
+                    </tr>
+                </table>
+        
+                <div class="submit">
+                    <input type="submit" value="Copiar Expectativas" onclick="copiarExpectativas()">
+                </div>
+            </form>
+
+            <div class="back-to-buttons">
+                <button onclick="BackToButtons()">Voltar</button>
+            </div>
+        </div>
+
+        <div class="b-container" id="b-container">
+            <textarea class="expanding-textarea" id="professor-textarea" rows="4" 
+            placeholder="Digite o treino aqui..."></textarea>
+
+            <div class="back-to-buttons">
+                <button onclick="BackToButtons()">Voltar</button>
+            </div>
+        </div>
+        
     </div>
+
     <script src="/docs/js/script.js"></script>
 </body>
-
 </html>

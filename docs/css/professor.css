@@ -19,13 +19,14 @@ body {
 .container {
     margin: auto;
     text-align: center; /* Ajuste o alinhamento do texto */
-    max-width: 500px; /* Define uma largura máxima para o conteúdo */
+    max-width: 450px; /* Define uma largura máxima para o conteúdo */
     background-color: #f0f0f0; /* Cor de fundo opcional */
     padding: 40px;
     border-radius: 20px;
 }
 
 .image {
+    width: auto;
     height: 100px;
     position: relative;
     margin: 20px;
@@ -36,10 +37,65 @@ body {
     height: 110%;
     display: inline;
 }
-
-.card-container a {
+.box button {
     width: 100%;
     margin-top: 1rem;
+    border: none;
+    background-color: #00aeef;
+    padding: 0.70rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+}
+
+.box button:hover {
+    background-color: #153d8a;
+}
+
+.a-container, .b-container{
+    display: none;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+td{
+    padding: 10px;
+}
+
+input{
+    width: 50px;
+}
+
+.back-to-buttons button{
+    width: 50%;
+    border: none;
+    background-color: #00aeef;
+    margin-top: 10px;
+    padding: 0.40rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.back-to-buttons button:hover {
+    background-color: #153d8a;
+}
+
+.submit input {
+    width: 100%;
     border: none;
     background-color: #00aeef;
     padding: 0.40rem;
@@ -49,65 +105,15 @@ body {
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
-    display: block;
 }
 
-.card-container a:hover {
+.submit input:hover {
     background-color: #153d8a;
 }
 
-/* css java script */
-
-  .exercicios-container input {
-    border: 2px dashed red;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
-    gap: 2px; /* Espaço entre os itens */
-    width: 100%; /* Largura 100% para ocupar a largura do contêiner */
-    padding: 10px; /* Espaçamento interno */
-    margin: 5px 0; /* Margem superior e inferior para espaçamento entre os inputs */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 4px; /* Cantos arredondados */
-}
-
-.exercicios-container input:focus-visible {
-    outline: 1px solid #00aeef;
-}
-
-
-button.adicionar-exercicio {
-    width: auto;
-    margin-top: 0.5rem;
-    margin-right: 10px;
-    border: none;
-    background-color: #153d8a;
-    padding: 0.20rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
-
-button.adicionar-exercicio:hover {
-    background-color: #091b3d;
-}
-
-button  {
-    width: auto;
-    margin-top: 0.5rem;
-    margin-right: 10px;
-    border: none;
-    background-color: #153d8a;
-    padding: 0.20rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
-
-button:hover {
-    background-color: #091b3d;
+.expanding-textarea {
+    resize: none;
+    overflow-y: hidden;
+    width: 100%;
+    margin-top: 10px;
 }

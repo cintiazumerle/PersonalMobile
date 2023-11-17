@@ -16,6 +16,10 @@ body {
     background-color: #00aeef;
 }
 
+.a-container, .b-container{
+    display: none;
+}
+
 .container {
     margin: auto;
     text-align: center; /* Ajuste o alinhamento do texto */
@@ -37,25 +41,65 @@ body {
     height: 110%;
     display: inline;
 }
-
-table {
+.box button {
     width: 100%;
-}
-td, th {
-    padding: 5px;
-}
-input[type="text"] {
-    width: 50px; /* Ajuste a largura dos campos de entrada conforme necessário */
+    margin-top: 1rem;
+    border: none;
+    background-color: #00aeef;
+    padding: 0.70rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+    display: block;
 }
 
-h1.treinos {
+.box button:hover {
+    background-color: #153d8a;
+}
+
+.back-to-buttons button{
+    width: 50%;
+    border: none;
+    background-color: #00aeef;
+    margin-top: 10px;
+    padding: 0.40rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.back-to-buttons button:hover {
+    background-color: #153d8a;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+td{
+    padding: 10px;
+}
+
+input{
+    width: 50px;
+}
+
+input::placeholder{
     text-align: center;
-    padding: 20px ;
 }
 
 .submit input {
     width: 100%;
-    margin-top: 1rem;
     border: none;
     background-color: #00aeef;
     padding: 0.40rem;
@@ -71,50 +115,18 @@ h1.treinos {
     background-color: #153d8a;
 }
 
-
-/* css javascrit */
-.botao-voltar {
-    width: 50%;
-    margin-top: 1rem;
-    border: none;
-    background-color: #00aeef;
-    padding: 0.40rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-    text-transform: uppercase;
-
-}
-
-#botao-relatorio {
-    display: block;
+.expanding-textarea {
+    resize: none;
+    overflow-y: hidden;
     width: 100%;
-    margin-top: 1rem;
-    border: none;
-    background-color: #00aeef;
-    padding: 0.40rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
+    margin-top: 10px;
 }
 
-#botoes-de-navegacao button:hover {
-    background-color: #153d8a;
+.desempenho {
+    display: none;
 }
 
-#botoes-de-navegacao h2 {
-    color: rgb(0, 0, 0);
-    margin-top: 1.5rem;
-}
-
-#botoes-de-navegacao img {
-    width: 55%;
+.desempenho img {
+    width: 80%;
     height: auto;
 }
-

@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/docs/CSS/aluno.css">
-    <title>Área do Aluno</title>
-    <style>
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="/docs/css/aluno.css">
 </head>
 
 <body>
@@ -18,61 +15,79 @@
         <h2>"NOME ALUNO"</h2>
 
         <div class="card-container">
-            <h1 class="treinos">Treino</h1>
-            <form id="meu-formulario" action="">
-                <table>
-                    <tr>
-                        <th>Exercício</th>
-                        <th>P (kg)</th>
-                        <th>R</th>
-                    </tr>
-                    <tr>
-                        <td>Exercício 1:</td>
-                        <td><input title="peso" type="text" name="primeiro_p" required></td>
-                        <td><input title="repeticao" type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 2:</td>
-                        <td><input title="peso" type="text" name="segundo_p" required></td>
-                        <td><input title="repeticao" type="text" name="segundo_r" required></td>
-                    </tr>
+            <div class="box">
+                <button onclick="showA()">Avaliação</button>
+            </div>
 
-                    <tr>
-                        <td>Exercício 3:</td>
-                        <td><input title="peso" type="text" name="primeiro_p" required></td>
-                        <td><input title="repeticao" type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 4:</td>
-                        <td><input title="peso" type="text" name="segundo_p" required></td>
-                        <td><input title="repeticao" type="text" name="segundo_r" required></td>
-                    </tr>
+            <div class="box">
+                <button onclick="showD()">Desempenho</button>
+            </div>
 
-                    <tr>
-                        <td>Exercício 5:</td>
-                        <td><input title="peso" type="text" name="primeiro_p" required></td>
-                        <td><input title="repetição" type="text" name="primeiro_r" required></td>
-                    </tr>
-                    <tr>
-                        <td>Exercício 6:</td>
-                        <td><input title="peso" type="text" name="segundo_p" required></td>
-                        <td><input title="repeticao" type="text" name="segundo_r" required></td>
-                    </tr>
-                </table>
-
-                <div class="submit">
-                    <input type="submit" value="Registrar">
-                </div>
-            </form>
-            <div id="botoes-de-navegacao">
-                <button id="botao-relatorio">Relatório</button>
+            <div class="box">
+                <button onclick="showB()">Treino do dia</button>
             </div>
         </div>
+
+        <div class="a-container" id="a-container">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>200M Corrida c/bag - Tempo em segundos:</td>
+                        <td><input title="tempo" type="text" name="tempo" id="tempo" required placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>20 Black Squat c/bag - Peso e Repetições:</td>
+                        <td><input title="peso" type="text" name="segundo_p" id="segundo_p" required placeholder="">
+                        </td>
+                        <td><input title="repeticao" type="text" name="segundo_r" required placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>15 Butterfly sit up c/ - Peso e Repetições:</td>
+                        <td><input title="peso" type="text" name="primeiro_p" id="primeiro_p" required placeholder="">
+                        </td>
+                        <td><input title="repeticao" type="text" name="primeiro_r" required placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>10 Push Press c/Kettlebell - Peso e Repetições:</td>
+                        <td><input title="terceiro_p" type="text" name="terceiro_p" id="terceiro_p" required
+                                placeholder="">
+                        </td>
+                        <td><input title="terceiro_r" type="text" name="terceiro_r" required placeholder=""></td>
+                    </tr>
+                </table>
+            </form>
+
+            <div class="submit">
+                <input type="submit" value="Registrar">
+            </div>
+            </form>
+
+            <div class="back-to-buttons">
+                <button onclick="backToButtons()">Voltar</button>
+            </div>
+        </div>
+
+        <div class="desempenho" id="desempenho">
+            <H2>Relatório Mensal</H2>
+            <img src="/docs/img/4435924.png" alt="">
+
+            <div class="back-to-buttons">
+                <button onclick="backToButtons()">Voltar</button>
+            </div>
+        </div>
+
+        <div class="b-container" id="b-container">
+            <table>
+                <textarea class="expanding-textarea" id="aluno-textarea" rows="4"
+                    placeholder="Treino do professor aparecerá aqui..." readonly></textarea>
+            </table>
+
+            <div class="back-to-buttons">
+                <button onclick="backToButtons()">Voltar</button>
+            </div>
+
+        </div>
     </div>
-
-
-
-
 
 
     <script src="/docs/js/script.js"></script>
