@@ -64,3 +64,40 @@ function BackToButtons() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let data = {
+  labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+  datasets: [{
+      label: 'Flexões',
+      data: [3, 2, 3, 5, 6],
+      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 1
+  }, {
+      label: 'Agachamentos',
+      data: [4, 5, 6, 2, 1],
+      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: 'rgba(255, 99, 132, 1)',
+      borderWidth: 1
+  }]
+};
+
+let options = {
+  maintainAspectRatio: true,
+  scales: {
+      yAxes: [{
+          ticks: {
+              beginAtZero: true
+          }
+      }]
+  }
+
+};
+
+let ctx = document.getElementById('myChart');
+let chart = new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: options
+});
+
